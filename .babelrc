@@ -1,0 +1,6 @@
+// 直接放在根目錄底下即可 
+{ 
+   "presets": ["@babel/preset-env"],  
+   "plugins": ["@babel/plugin-transform-runtime"] 
+}
+
