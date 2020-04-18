@@ -6,8 +6,12 @@ var config = {
   entry: path.join(__dirname, 'src/router', 'router'),
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: './'
+    filename: 'bundle.js'
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    hot: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -31,7 +35,7 @@ var config = {
   plugins: [
     new VueLoaderPlugin(),
     new htmlWebpackPlugin({ // 打包HTML
-      template: './index.html'//, // HTML模板路径
+      template: './index.html' //, // HTML模板路径
       // favicon: './src/assets/images/favicon.png' //favicon路径(如果你有設定favicon的話，這個屬性就要配置)
     })
   ]
