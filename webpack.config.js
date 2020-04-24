@@ -1,5 +1,6 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin'); // 宣告使用插件
+const CopyPlugin = require('copy-webpack-plugin');
 var path = require('path')
 var config = {
   mode: "development",
@@ -35,9 +36,12 @@ var config = {
   plugins: [
     new VueLoaderPlugin(),
     new htmlWebpackPlugin({ // 打包HTML
-      template: './index.html' //, // HTML模板路径
-      // favicon: './src/assets/images/favicon.png' //favicon路径(如果你有設定favicon的話，這個屬性就要配置)
-    })
+      template: './index.html'
+    }),
+    new CopyPlugin([
+      { from: './src/assets/images', to: 'image' },
+      { from: './src/assets/style', to: 'css' }
+    ])
   ]
 }
 module.exports = config

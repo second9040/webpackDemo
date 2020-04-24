@@ -1,9 +1,6 @@
 <template>
-  <div style="background: #ddeeff">
+  <div class="catAll">
     <p>catAll</p>
-    <router-link to="/">cat1</router-link>
-    <router-link to="/cat2">cat2</router-link>
-    <router-link to="/cat3">cat3</router-link>
-    <router-link to="/catAll">catAll</router-link>
+    <img src="image/catAll.png" alt="catAll.png">
   </div>
 </template>
