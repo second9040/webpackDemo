@@ -3,11 +3,12 @@ import VueRouter from 'vue-router';
 import isheader from '../views/header.vue'
 import isfooter from '../views/footer.vue'
 import cat1 from '../views/cat1.vue'
-import cat2 from '../views/cat2.vue'
-import cat3 from '../views/cat3.vue'
-import catAll from '../views/catAll.vue'
 
-Vue.use(VueRouter) 
+const cat2 = () => import('../views/cat2')
+const cat3 = () => import('../views/cat3')
+const catAll = () => import('../views/catAll')
+
+Vue.use(VueRouter)
 
 const router = new VueRouter({
   linkActiveClass: 'active',
