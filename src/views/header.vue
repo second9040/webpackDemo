@@ -4,6 +4,7 @@
     <router-link to="/cat2">cat2</router-link>
     <router-link to="/cat3">cat3</router-link>
     <router-link to="/catAll">catAll</router-link>
+    <router-link to="/fontTest">fontTest</router-link>
     <p>header</p>
   </div>
 </template>
