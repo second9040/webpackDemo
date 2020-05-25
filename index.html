@@ -1,17 +1,25 @@
 <!-- index.html  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <title>webpackDemo</title>
-  <link rel="shortcut icon" type="image/png" href="/image/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="/image/favicon.png" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightBox.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
+
 <body>
   <div id="app">
     <isheader></isheader>
-    <router-view></router-view>
+    <div class="content">
+      <router-view></router-view>
+    </div>
     <isfooter></isfooter>
   </div>
 </body>
+
 </html>

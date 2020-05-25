@@ -1,7 +1,60 @@
-.header{background: #55ff55;}
-.footer{background: #ffaaff;}
-.cat1{background: #aabbcc; }
-.cat2{background: #bbccdd; }
-.cat3{background: #ccddee; }
-.catAll{background: #ddeeff;}
-.testfont p i{margin:5px;color:#dd8888;font-size:120px;}
+button,img,figure,div{
+  outline: none;
+}
+
+p,h1,h2,h3,h4,h5,h6,span,a{
+  font-family: 'Comic Sans MS', Candara ,Arial;
+}
+
+.header {
+  background: #55ff55;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.header a,
+.footer p {
+  font-size: 1.5em;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.footer {
+  background: #ffaaff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.cat1 {
+  background: #aabbcc;
+}
+
+.cat2 {
+  background: #bbccdd;
+}
+
+.cat3 {
+  background: #ccddee;
+}
+
+.catAll {
+  background: #ddeeff;
+}
+
+.testfont {
+  padding-bottom: 100px;
+}
+
+.testfont p i {
+  margin: 5px;
+  color: #dd8888;
+  font-size: 120px;
+}

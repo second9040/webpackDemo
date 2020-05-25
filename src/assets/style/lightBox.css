@@ -1,0 +1,118 @@
+.title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.lightBox {
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.lightBox p,
+.title {
+  font-size: 1.5em;
+}
+
+.lightBox .demo {
+  width: auto;
+  height: 300px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.mask img {
+  height: 70vh;
+  width: auto;
+  margin: 0 auto;
+}
+
+.closeBtn{
+    background: rgba(0, 0, 0, 0.5); border-radius: 50px; width: 40px; height: 40px; font-size: 24px;
+    position: absolute; top: 15px; right: 15px; cursor: pointer; color: white; opacity: 0.5;outline: none;
+    z-index: 200; border: solid;
+}
+.closeBtn:hover{
+    opacity: 1;
+}
+
+/* 修改swipet樣式的部分 */
+
+.mask .swiper-zoom-container {
+  height: 100vh;
+}
+
+.mask .swiper-container-horizontal>.swiper-pagination-bullets,
+.mask .swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 40px;
+}
+
+.mask .swiper-button-next:after,.mask .swiper-button-prev:after{
+  font-family: 'Font Awesome 5 Free';
+}
+
+.mask .swiper-button-prev:after,
+.mask .swiper-container-rtl .swiper-button-next:after {
+  content: '\f104';
+}
+
+.mask .swiper-button-next:after,
+.mask .swiper-container-rtl .swiper-button-prev:after {
+  content: "\f105";
+}
+
+.mask .fa-angle-left:before,.mask .fa-angle-right:before{
+  content: "";
+}
+
+.mask .swiper-pagination-bullet{
+  background: #fff
+}
+
+.mask .swiper-button-prev,.mask .swiper-container-rtl .swiper-button-next{
+  /*去除預設的藍色外框*/
+  outline: none;
+}
+
+@media (max-width:1500px) {
+
+  .lightBox {
+    display: block;
+    margin: 10px auto 100px auto;
+  }
+}
+
+@media (max-width:1000px) {
+
+  .lightBox .demo {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .lightBox p,
+  .title {
+    font-size: 3em;
+  }
+
+
+.mask img {
+  height: auto;
+  width: 70vw;
+  margin: 0 auto;
+}
+}
